@@ -98,7 +98,7 @@ export default function Home() {
     }
 }
 
-alert(getDeviceModelFromUserAgent());
+// alert(getDeviceModelFromUserAgent());
 
   function detectiPhoneModel() {
     const { userAgent } = navigator;
@@ -150,7 +150,7 @@ alert(getDeviceModelFromUserAgent());
   // Example of using this in a Telegram Mini App
   const deviceModel = detectiPhoneModel();
 
-  alert("device model" + deviceModel);
+  // alert("device model" + deviceModel);
 
   function getWebGLRenderer() {
     // Create a canvas element
@@ -176,12 +176,12 @@ alert(getDeviceModelFromUserAgent());
     }
   }
 
-  alert("canvas check webgl" + getWebGLRenderer());
+  // alert("canvas check webgl" + getWebGLRenderer());
 
   if (navigator.getBattery) {
     navigator.getBattery().then(function(battery) {
-        alert("Battery Level: " + battery.level * 100 + "%");
-        alert("Charging: " + (battery.charging ? "Yes" : "No"));
+        // alert("Battery Level: " + battery.level * 100 + "%");
+        // alert("Charging: " + (battery.charging ? "Yes" : "No"));
     });
 }
   
